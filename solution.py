@@ -16,5 +16,4 @@ def solution(x_success: int,
     alpha = 0.08
     effect = (pval < alpha)
     
-    return effect 
-   
+    return effect
