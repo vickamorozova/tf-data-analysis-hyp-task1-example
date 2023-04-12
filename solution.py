@@ -12,8 +12,7 @@ def solution(x_success: int,
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     
-    _, pval = proportions_ztest([x_success, y_success], [x_cnt, y_cnt], alternative='larger')
+    _, pvalue = proportions_ztest([x_success, y_success], [x_cnt, y_cnt], alternative='larger')
     alpha = 0.08
-    effect = (pval < alpha)
     
-    return effect
+    return pvalue < alpha
